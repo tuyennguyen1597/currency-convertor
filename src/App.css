@@ -1,0 +1,69 @@
+/* blue1:#33428E, 
+blue2: #012754, 
+button:#002854, 
+background: #F8F9FB */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#root {
+  background-color: #F8F9FB;
+  color: #012754 ;
+}
+
+.button {
+  background-color: #002954;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 1rem;
+}
+
+.card-media {
+  height: 5rem;
+}
+
+.card-content {
+  height: 60px;
+  width: 40%;
+  border: 3px solid #33428E;
+  border-radius: 10px;
+  height: 10px;
+  position: relative;
+}
+
+.card-content .title {
+  position: absolute;
+  top: -20px;
+  background-color: #fff;
+  padding: 0.25rem ;
+}
+
+.select-currency {
+  border-bottom: none; /* Remove the underline */
+}
+
+.switch-button {
+  margin: 0 auto;
+  width: 20px;
+}
+
+
+.MuiCardContent-root {
+  padding-bottom: 0;
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 16px !important;
+}
