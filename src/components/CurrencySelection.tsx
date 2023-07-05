@@ -31,7 +31,7 @@ const CurrencySelection: React.FC<CurrencySelection> = ({ title, currencies }) =
                 </Grid>
 
                 <Grid item>
-                    <TextField className='input-item' id='standard-basic' />
+                    <TextField className='input-item' id='standard-basic' type='number' />
                 </Grid>
             </Grid>
         </CardContent>
