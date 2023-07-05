@@ -6,16 +6,43 @@ background: #F8F9FB */
 * {
   margin: 0 auto;
   padding: 0;
+  box-sizing: inherit;
 }
 
-#root {
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.7;
+  padding: 3rem;
   background-color: #F8F9FB;
-  color: #012754 ;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-sm {
+  padding: 0.3rem;
 }
 
 .button {
-  background-color: #002954;
-  margin: auto;
+  background-color: #002954 !important;
+  color: #F8F9FB !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
 }
 
 .container {
@@ -28,6 +55,16 @@ background: #F8F9FB */
   margin: 0 auto;
   max-width: 1100px;
   padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.header {
+  font-size: 2rem;
+  color: #012754 !important;
+}
+
+.header-title {
+  line-height: 1;
 }
 
 .card-media {
@@ -35,7 +72,7 @@ background: #F8F9FB */
 }
 
 .card-content {
-  height: 60px;
+  height: 5rem !important;
   width: 40%;
   border: 3px solid #33428E;
   border-radius: 10px;
@@ -47,15 +84,19 @@ background: #F8F9FB */
   position: absolute;
   top: -20px;
   background-color: #fff;
-  padding: 0.25rem ;
+  padding: 0.25rem;
+}
+
+.card-item {
+  transform: translateY(-7px);
 }
 
 .select-currency {
-  border-bottom: none; /* Remove the underline */
+  border-bottom: none;
 }
 
 .switch-button {
-  margin: 0 auto;
+  margin: 1.5rem auto;
   width: 20px;
 }
 
@@ -66,4 +107,30 @@ background: #F8F9FB */
 
 .MuiCardContent-root:last-child {
   padding-bottom: 16px !important;
+}
+
+.margin-lg {
+  margin: 2rem auto;
+}
+
+.MuiInput-underline:before {
+  display: none;
+}
+
+.MuiInput-underline::after {
+  display: none;
+}
+
+.seperator {
+  font-size: 3rem;
+  transform: translateY(-13px);
+  display: block;
+}
+
+.MuiInputBase-root {
+  font-size: 1.5rem !important;
+}
+
+.input-item {
+ transform: translateY(-2px);
 }

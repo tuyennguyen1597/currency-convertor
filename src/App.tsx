@@ -9,7 +9,7 @@ import Convertor from './components/Convertor';
 function App() {
 	return (
 		<Container maxWidth='md' className='container'>
-			<Router>y
+			<Router>
 				<Routes>
 					<Route path='/' Component={Convertor}></Route>
 				</Routes>

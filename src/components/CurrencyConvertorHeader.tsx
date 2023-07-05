@@ -10,13 +10,15 @@ const CurrencyConvertorHeader = () => {
                 justifyContent="center"
                 alignContent="center"
                 alignItems="center"
-                spacing={4}
+                spacing={2}
+                className="header"
             >
                 <Grid item>
                     <img className="card-media" src={ConverterImage} alt="Test" />
                 </Grid>
-                <Grid item>
-                    <h1>Currency Transfer</h1>
+                <Grid item className="header-title">
+                    <h1>Currency</h1>
+                    <h1>Transfer</h1>
                 </Grid>
             </Grid>
     )
