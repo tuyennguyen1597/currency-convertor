@@ -53,7 +53,7 @@ body {
 
 .card {
   margin: 0 auto;
-  max-width: 1100px;
+  width: 50rem;
   padding: 1rem;
   font-size: 1.6rem;
 }
@@ -73,7 +73,7 @@ body {
 
 .card-content {
   height: 5rem !important;
-  width: 40%;
+  width: 80%;
   border: 3px solid #33428E;
   border-radius: 10px;
   height: 10px;

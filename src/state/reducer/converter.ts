@@ -18,9 +18,13 @@ const reducer = (state: ConverterState = initialState, action: Action) => {
     switch (action.type) {
         case ActionType.GET_CURRENCIES:
             return { loading: false, error: null, data: [] };
+        case ActionType.GET_CURRENCIES_RATE:
+            return { loading: false, error: null, data: {} };
         case ActionType.GET_CURRENCIES_SUCCESS:
+        case ActionType.GET_CURRENCIES_RATE_SUCCESS:
             return { loading: false, error: null, data: action.payload };
         case ActionType.GET_CURRENCIES_ERROR:
+        case ActionType.GET_CURRENCIES_RATE_ERROR:
             return { loading: false, error: action.payload, data: [] };
         default:
             return state;

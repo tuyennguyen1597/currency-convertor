@@ -14,5 +14,18 @@ interface GetCurrenciesErrorAction {
     payload: string
 }
 
+interface GetCurrenciesRateAction {
+    type: ActionType.GET_CURRENCIES_RATE,
+}
 
-export type Action = GetCurrenciesAction | GetCurrenciesSuccessAction | GetCurrenciesErrorAction;
+interface GetCurrenciesRateSuccessAction {
+    type: ActionType.GET_CURRENCIES_RATE_SUCCESS,
+    payload: Object
+}
+
+interface GetCurrenciesRateErrorAction {
+    type: ActionType.GET_CURRENCIES_RATE_ERROR,
+    payload: string
+}
+
+export type Action = GetCurrenciesAction | GetCurrenciesSuccessAction | GetCurrenciesErrorAction | GetCurrenciesRateAction | GetCurrenciesRateSuccessAction | GetCurrenciesRateErrorAction;
